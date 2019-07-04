@@ -249,5 +249,107 @@ body {
       }
     }
   }
+}
 
+.main {
+  width: 100%;
+  margin: 120px 0;
+
+  .cards {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+
+    &__heading {
+      font-family: $inconsolata;
+      font-size: 48px;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    &__description {
+      font-family: $open-sans;
+      font-weight: 21px;
+      text-align: center;
+      margin-bottom: 60px;
+      color: rgba(255,255,255,0.5);
+    }
+
+    &__container {
+      max-width: 1304px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      grid-gap: 60px;
+
+      @media (max-width: 1440px) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .card {
+      max-width: 652px;
+      width: 100%;
+      min-height: 852px;
+      background: #FFFFFF;
+      color: #212121;
+      position: relative;
+
+      &__type {
+        display: block;
+        font-family: $open-sans;
+        font-weight: bold;
+        font-size: 21px;
+        opacity: .5;
+        margin: 60px 0 0 60px;
+      }
+
+      &__title {
+        font-family: $inconsolata;
+        font-size: 38px;
+        margin: 0 60px 30px 60px;
+      }
+
+      &__text {
+        font-family: $open-sans;
+        font-size: 21px;
+        margin: 0 60px 60px 60px;
+        line-height: 30px;
+      }
+
+      &__button {
+        position: absolute;
+        bottom: 60px;
+        right: 60px;
+      }
+
+      &__image {
+        @media (max-width: $tablet) {
+          width: 100%;
+        }
+      }
+    }
+  }
+  
+  .cta {
+    text-align: center;
+    margin: 120px 0;
+
+    &__button {
+      text-decoration: none;
+      color: #FFFFFF;
+      border: 3px solid #FFFFFF;
+      border-radius: 100px;
+      padding: 29px 105px;
+      font-family: $inconsolata;
+      font-weight: bold;
+    }
+
+    &__button:hover {
+      border: 3px solid rgb(197, 145, 0);
+      background: rgb(197, 145, 0);
+      color: #212121;
+    }
+  }
 }
