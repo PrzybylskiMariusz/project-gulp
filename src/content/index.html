@@ -14,10 +14,10 @@
     <nav class="navigation">
       <a href="" class="navigation__logo">Efektywnie.</a>
       <ul class="navigation__list navigation__list--js">
-        <li class="navigation__item"><a href="" class="navigation__link">STRONA GŁÓWNA</a></li>
-        <li class="navigation__item"><a href="" class="navigation__link">ARTYKUŁY</a></li>
-        <li class="navigation__item"><a href="" class="navigation__link">O MNIE</a></li>
-        <li class="navigation__item"><a href="" class="navigation__link navigation__link--button">PRZYWITAJ SIĘ</a></li>
+        <li class="navigation__item"><a href="index.html" class="navigation__link">STRONA GŁÓWNA</a></li>
+        <li class="navigation__item"><a href="#artykuły" class="navigation__link">ARTYKUŁY</a></li>
+        <li class="navigation__item"><a href="#omnie" class="navigation__link">O MNIE</a></li>
+        <li class="navigation__item"><a href="#przywitanie" class="navigation__link navigation__link--button">PRZYWITAJ SIĘ</a></li>
       </ul>
       <button class="navigation__hamburger navigation__hamburger--js">&#9776;</button>
     </nav>
@@ -26,7 +26,7 @@
       <p class="header__text">Przestań narzekać na brak czasu i zacznij działać efektywnie. Poznaj narzędzia, dzięki
         którym znajdziesz czas tam gdzie go nie ma. Doby rozciągnąć się nie da i wszyscy mamy takie same 24 godziny.
         Tutaj dowiesz się jak wykorzystać ten czas aby zrobić więcej.</p>
-      <p class="header__cta"><a href="" class="header__button">ZACZNIJ TUTAJ</a></p>
+      <p class="header__cta"><a href="#przywitanie" class="header__button">ZACZNIJ TUTAJ</a></p>
     </section>
     <div class="header__scroller">
       <div class="header__scroll"></div>
@@ -34,7 +34,7 @@
     <div class="header__date"></div>
   </header>
   <main class="main">
-    <section class="cards">
+    <section class="cards" id="artykuły">
       <h2 class="cards__heading">ARTYKUŁY</h2>
       <p class="cards__description">Poznaj skuteczne i sprawdzone narzędzia zarządzania sobą w czasie</p>
       <div class="cards__container">
@@ -43,7 +43,7 @@
           <span class="card__type">FELIETON</span>
           <h3 class="card__title">Drobne mile widziane</h3>
           <p class="card__text">Porządek na biurku już pewnie masz, listę zadań (inbox) już przeanalizowałeś. I gdzie teraz jesteś? Jak idzie Ci realizacja zadań? Te które zajęły mniej niż 2 minuty już pewnie zrobiłeś. Te których nie musiałeś robić sam, zapewne już wydelegowałeś. A co z pozostałymi zadaniami?<br>Często zdarza się, że na początku drogi do bezstresowej produktywności ludzie…</p>
-          <a href="" class="card__button"><img src="../assets/img/card__button.png" alt="strzałka" class="card__arrow"></a>
+          <a href="drobne.html" class="card__button"><img src="../assets/img/card__button.png" alt="strzałka" class="card__arrow"></a>
         </section>
         <section class="card">
           <img src="../assets/img/planowanie.png" alt="komputer plan" class="card__image">
@@ -78,14 +78,14 @@
           <span class="card__type">FELIETON</span>
           <h3 class="card__title">Magiczne dwie minuty</h3>
           <p class="card__text">To narzędzie pozwoli Ci w prosty, szybki i sprawny sposób wejść w stan produktywności.<br>Dwie minuty to czas, w którym można zrobić większość prostych zadań codziennej pracy. Zaplanowałeś swój dzień i patrząc na listę zadań nie wiesz od czego zacząć. Dodatkowo ilość zadań na liście budzi w Tobie myśl o tym jak bardzo Ci się nie chce. </p>
-          <a href="" class="card__button"><img src="../assets/img/card__button.png" alt="strzałka" class="card__arrow"></a>
+          <a href="dwieminuty.html" class="card__button"><img src="../assets/img/card__button.png" alt="strzałka" class="card__arrow"></a>
         </section>
       </div>
     </section>
     <div class="cta">
-      <a href="" class="cta__button">CZYTAJ NA FACEBOOK</a>
+      <a href="https://www.facebook.com/coridMP/" target="_blank" class="cta__button">CZYTAJ NA FACEBOOK</a>
     </div>
-    <section class="about">
+    <section class="about" id="omnie">
       <h2 class="about__heading">O MNIE</h2>
       <p class="about__description">Kim jestem, czym się zajmuje i co mnie interesuje, czyli krótka nota o autorze.</p>
       <div class="person">
@@ -97,7 +97,7 @@
         </div>
       </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="przywitanie">
       <h2 class="contact__heading">PRZYWITAJ SIĘ</h2>
       <p class="contact__description">Jeśli jesteś zainteresowany dodatkowymi materiałami zostaw swój mail.</p>
       <form action="POST" class="contact__form">
@@ -109,9 +109,9 @@
   <footer class="footer">
     <p class="footer__text">&copy; 2019 Mariusz Przybylski</p>
     <ul class="footer__list">
-      <li class="footer__item"><img src="../assets/img/bxl-behance.png" alt="behance logo" class="footer__icon footer__icon--behance"></li>
-      <li class="footer__item"><img src="../assets/img/bxl-github.png" alt="github logo" class="footer__icon footer__icon--github"></li>
-      <li class="footer__item"><img src="../assets/img/bxl-facebook-square.png" alt="facebook logo" class="footer__icon footer__icon--facebook"></li>
+      <li class="footer__item"><a href="https://www.behance.net/przybylskimariusz" target="_blank" class="footer__button"><img src="../assets/img/bxl-behance.png" alt="behance logo" class="footer__icon footer__icon--behance"></a></li>
+      <li class="footer__item"><a href="https://github.com/PrzybylskiMariusz" target="_blank" class="footer__button"><img src="../assets/img/bxl-github.png" alt="github logo" class="footer__icon footer__icon--github"></a></li>
+      <li class="footer__item"><a href="https://www.facebook.com/coridMP/" target="_blank" class="footer__button"><img src="../assets/img/bxl-facebook-square.png" alt="facebook logo" class="footer__icon footer__icon--facebook"></a></li>
     </ul>
   </footer>
 

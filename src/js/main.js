@@ -8,7 +8,10 @@ let time = new Date();
 let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 let today = time.toLocaleDateString("pl-PL", options);
 let paragraph = document.querySelector('.header__date');
-paragraph.innerHTML = today;
+if(paragraph){
+    paragraph.innerHTML = today;
+}
+
 
 const navigationList = document.querySelector('.navigation__list--js');
 const navigationHamburger = document.querySelector('.navigation__hamburger--js');
