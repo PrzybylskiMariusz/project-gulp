@@ -45,6 +45,10 @@ body {
     @media (max-width: $tablet) {
       font-size: 48px;
     }
+
+    @media (max-width: 744px) {
+      font-size: 28px;
+    }
   }
 
   &__text {
@@ -57,6 +61,11 @@ body {
     @media (max-width: $tablet) {
       font-size: 16px;
       line-height: 25px;
+    }
+
+    @media (max-width: 744px) {
+      font-size: 14px;
+      line-height: 23px;
     }
   }
 
@@ -130,6 +139,11 @@ body {
       font-size: 16px;
       bottom: 30px;
     }
+
+    @media (max-width: 744px) {
+      font-size: 14px;
+      line-height: 23px;
+    }
   }
 
   .navigation {
@@ -162,6 +176,10 @@ body {
 
       @media (max-width: $tablet) {
         font-size: 38px;
+      }
+      
+      @media (max-width: 744px) {
+        font-size: 28px;
       }
     }
 
@@ -253,7 +271,7 @@ body {
 
 .main {
   width: 100%;
-  margin: 120px 0;
+  margin-top: 120px;
 
   .cards {
     width: 100%;
@@ -265,6 +283,11 @@ body {
       font-size: 48px;
       margin-bottom: 24px;
       text-align: center;
+
+      @media (max-width: 744px) {
+        font-size: 28px;
+        margin-bottom: 12px;
+      }
     }
 
     &__description {
@@ -273,6 +296,11 @@ body {
       text-align: center;
       margin-bottom: 60px;
       color: rgba(255,255,255,0.5);
+
+      @media (max-width: 744px) {
+        font-size: 14px;
+        line-height: 23px;
+      }
     }
 
     &__container {
@@ -311,12 +339,20 @@ body {
         @media (max-width: $tablet) {
           font-size: 16px;
         }
+
+        @media (max-width: 744px) {
+          font-size: 14px;
+        }
       }
 
       &__title {
         font-family: $inconsolata;
         font-size: 38px;
         margin: 0 60px 30px 60px;
+
+        @media (max-width: 744px) {
+          font-size: 28px;
+        }
       }
 
       &__text {
@@ -328,6 +364,11 @@ body {
         @media (max-width: $tablet) {
           font-size: 16px;
           line-height: 25px;
+        }
+
+        @media (max-width: 744px) {
+          font-size: 14px;
+          line-height: 23px;
         }
       }
 
@@ -375,6 +416,10 @@ body {
       font-size: 38px;
       margin-bottom: 24px;
       text-align: center;
+
+      @media (max-width: 744px) {
+        font-size: 28px;
+      }
     }
 
     &__description {
@@ -383,6 +428,11 @@ body {
       text-align: center;
       margin-bottom: 60px;
       color: rgba(255,255,255,0.5);
+
+      @media (max-width: 744px) {
+        font-size: 14px;
+        line-height: 23px;
+      }
     }
 
     .person {
@@ -409,6 +459,11 @@ body {
         @media (max-width: $tablet) {
           font-size: 16px;
         }
+
+        @media (max-width: 744px) {
+          font-size: 14px;
+          line-height: 23px;
+        }
       }
 
       &__title {
@@ -416,6 +471,10 @@ body {
         font-size: 48px;
         font-weight: bold;
         margin: 0 0 24px 0;
+
+        @media (max-width: 744px) {
+          font-size: 28px;
+        }
       }
 
       &__text {
@@ -427,7 +486,101 @@ body {
           font-size: 16px;
           line-height: 25px;
         }
+
+        @media (max-width: 744px) {
+          font-size: 14px;
+          line-height: 23px;
+        }
       }
     }
+  }
+  
+  .contact {
+    background: #FFFFFF;
+    color: #212121;
+    padding: 60px 64px;
+    text-align: center;
+
+    &__heading {
+      font-family: $inconsolata;
+      font-size: 38px;
+      margin: 0 0 24px 0;
+
+      @media (max-width: 744px) {
+        font-size: 28px;
+      }
+    }
+
+    &__description {
+      font-family: $open-sans;
+      font-weight: 21px;
+      margin-bottom: 60px;
+      opacity: .5;
+
+      @media (max-width: 744px) {
+        font-size: 14px;
+        line-height: 23px;
+      }
+    }
+
+    &__form {
+      max-width: 1088px;
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    &__email {
+      width: 100%;
+      padding: 26px 60px;
+      border: 3px solid #212121;
+      border-radius: 100px;
+      font-family: $open-sans;
+      font-size: 21px;
+      font-weight: bold;
+
+      @media (max-width: $tablet) {
+        padding: 26px 30px;
+        font-size: 18px;
+        margin-bottom: 30px;
+      }
+
+      @media (max-width: 744px) {
+        font-size: 14px;
+        line-height: 23px;
+      }
+    }
+
+    &__email::placeholder {
+      color: #212121;
+      opacity: .3;
+    }
+
+    &__submit {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 26px 99px;
+      border: 3px solid #212121;
+      border-radius: 100px;
+      background: #212121;
+      color: #FFFFFF;
+      font-family: $inconsolata;
+      font-weight: bold;
+      font-size: 21px;
+      cursor: pointer;
+
+      @media (max-width: $tablet) {
+        padding: 26px 50px;
+        font-size: 18px;
+        position: relative;
+      }
+    }
+  }
+
+  .footer {
+    margin: 60px 64px;
+    display: flex;
+    flex-direction: row;
   }
 }
