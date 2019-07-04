@@ -283,7 +283,7 @@ body {
       justify-content: center;
       grid-gap: 60px;
 
-      @media (max-width: 1440px) {
+      @media (max-width: $small-desktop) {
         grid-template-columns: 1fr;
       }
     }
@@ -338,6 +338,7 @@ body {
       }
 
       &__image {
+        width: 100%;
         @media (max-width: $tablet) {
           width: 100%;
         }
