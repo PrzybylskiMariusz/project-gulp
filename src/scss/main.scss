@@ -4,9 +4,6 @@
 //Google Fonts
 @import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700|Open+Sans:400,600,700&display=swap&subset=latin-ext');
 
-//Fonts Variables
-$inconsolata: 'Inconsolata', monospace;
-$open-sans: 'Open Sans', sans-serif;
 
 
 html {
@@ -36,7 +33,7 @@ body {
   &__content {
     height: 416px;
     max-width: 1364px;
-    padding: 0 32px;
+    padding: 0 60px;
     width: 100%;
   }
 
@@ -44,6 +41,10 @@ body {
     font-family: $inconsolata;
     font-size: 68px;
     margin-bottom: 30px;
+
+    @media (max-width: $tablet) {
+      font-size: 48px;
+    }
   }
 
   &__text {
@@ -52,6 +53,11 @@ body {
     width: 100%;
     font-size: 21px;
     line-height: 30px;
+
+    @media (max-width: $tablet) {
+      font-size: 16px;
+      line-height: 25px;
+    }
   }
 
   &__button {
@@ -63,6 +69,14 @@ body {
     background: #FFFFFF;
     border-radius: 100px;
     padding: 29px 61px;
+
+    @media (max-width: $tablet) {
+      font-size: 16px;
+    }
+  }
+
+  &__button:hover {
+    background: rgb(197, 145, 0);
   }
 
   &__cta {
@@ -76,6 +90,10 @@ body {
     width: 44px;
     position: absolute;
     bottom: 60px;
+
+    @media (max-width: $small-desktop) {
+      display: none;
+    }
   }
 
   &__scroll {
@@ -96,7 +114,6 @@ body {
       100% {
         top: 16px;
       }
-      
     }
   }
 
@@ -108,6 +125,11 @@ body {
     font-family: $inconsolata;
     font-size: 21px;
     font-weight: bold;
+
+    @media (max-width: $tablet) {
+      font-size: 16px;
+      bottom: 30px;
+    }
   }
 
   .navigation {
@@ -118,8 +140,13 @@ body {
     display: grid;
     grid-auto-flow: column;
     align-items: center;
-    height: 110px;
+    padding: 25px 0;
+    //height: 110px;
     z-index: 9999;
+    
+    @media (max-width: $small-desktop) {
+      grid-auto-flow: row;
+    }
 
     &__logo {
       padding-left: 140px;
@@ -128,6 +155,14 @@ body {
       font-family: $inconsolata;
       font-size: 48px;
       font-weight: bold;
+
+      @media (max-width: $small-desktop) {
+        padding-left: 60px;
+      }
+
+      @media (max-width: $tablet) {
+        font-size: 38px;
+      }
     }
 
     &__list {
@@ -136,15 +171,36 @@ body {
       margin-right: 140px;
     }
 
-    &__item:not(last-child) {
+    @media (max-width: $small-desktop) {
+      &__list{
+      display: none;
+      justify-self: center;
+      text-align: center;
+      margin-right: 0;
+      }
+
+      .navigation__list--visible {
+        display: block;
+      }
+    }
+
+    &__item {
       display: inline-block;
       margin-right: 60px;
+
+      @media (max-width: $small-desktop) {
+        display: block;
+        margin-right: 0;
+        margin-top: 40px;
+      }
     }
 
     &__item:last-child {
-      border: 3px solid #FFFFFF;
-      border-radius: 100px;
-      padding: 14px 30px;
+      margin-right: 0;
+
+      @media (max-width: $small-desktop) {
+        margin-top: 60px;
+      }
     }
 
     &__link {
@@ -152,10 +208,45 @@ body {
       color: #FFFFFF;
       font-family: $inconsolata;
       font-size: 21px;
+
+      &--button {
+        border: 3px solid #FFFFFF;
+        border-radius: 100px;
+        padding: 14px 30px;
+      }
+
+      &--button:hover {
+        background: #FFFFFF;
+        color: #212121;
+        font-weight: bold;
+      }
     }
 
-    &__link:hover {
+    &__link:hover:not(.navigation__link--button) {
       font-weight: bold;
+      color: rgb(197, 145, 0);
+    }
+
+    &__hamburger {
+      font-family: $inconsolata;
+      font-size: 21px;
+      color: #FFFFFF;
+      background: none;
+      border: none;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 45px;
+      right: 60px;
+      cursor: pointer;
+
+      @media (min-width: $small-desktop) {
+        display: none;
+      }
+
+      @media (max-width: $tablet) {
+        top: 30px;
+      }
     }
   }
 
