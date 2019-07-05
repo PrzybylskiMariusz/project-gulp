@@ -24,3 +24,5 @@ navigationHamburger.addEventListener('click', (e) => {
         navigationHamburger.innerHTML = "&#9776;";
     }
 });
+
+
