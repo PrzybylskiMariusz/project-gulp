@@ -506,7 +506,7 @@ body {
   .contact {
     background: #FFFFFF;
     color: #212121;
-    padding: 60px 64px;
+    padding: 120px 64px;
     text-align: center;
 
     &__heading {
@@ -867,6 +867,7 @@ body {
       &--first {
         padding: 29px 96px;
         background: #FFFFFF;
+        color: #212121;
         opacity: .5;
         
         @media (max-width: $mobile) {
