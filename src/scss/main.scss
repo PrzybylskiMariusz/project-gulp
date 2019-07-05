@@ -793,6 +793,14 @@ body {
       font-size: 21px;
       font-weight: bold;
       opacity: .5;
+
+      @media (max-width: $tablet) {
+        font-size: 16px;
+      }
+
+      @media (max-width: 744px) {
+        font-size: 14px;
+      }
     }
 
     &__heading {
@@ -801,6 +809,11 @@ body {
       font-weight: bold;
       margin-top: 0;
       margin-bottom: 30px;
+
+
+      @media (max-width: 744px) {
+        font-size: 28px;
+      }
     }
 
     &__text {
@@ -811,11 +824,25 @@ body {
       &--first{
         font-weight: bold;
       }
+
+      @media (max-width: $tablet) {
+        font-size: 16px;
+        line-height: 25px;
+      }
+
+      @media (max-width: 744px) {
+        font-size: 14px;
+        line-height: 23px;
+      }
     }
 
     &__buttons {
       margin: 120px 0 60px 0;
       text-align: right;
+
+      @media (max-width: $tablet) {
+        text-align: center;
+      }
     }
 
     &__button {
@@ -831,6 +858,10 @@ body {
         padding: 29px 96px;
         background: #FFFFFF;
         opacity: .5;
+        
+        @media (max-width: 744px) {
+          margin-bottom: 30px;
+        }
       }
 
       &--first:hover {
@@ -842,12 +873,21 @@ body {
         margin-left: 60px;
         color: #FFFFFF;
         background: #212121;
+
+        @media (max-width: 744px) {
+          margin-left: 0;
+        }
       }
 
       &--last:hover {
         background: rgb(197, 145, 0);
         border-color: rgb(197, 145, 0);
         color: #212121;
+      }
+
+      @media (max-width: 744px) {
+        display: block;
+        font-size: 18px;
       }
     }
   }
