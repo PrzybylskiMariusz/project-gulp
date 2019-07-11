@@ -370,11 +370,11 @@ body {
     background: #FFFFFF;
     border-radius: 100px;
     padding: 29px 61px; }
+    .header__button:hover {
+      background: #c59100; }
     @media (max-width: 1004px) {
       .header__button {
         font-size: 16px; } }
-  .header__button:hover {
-    background: #c59100; }
   .header__cta {
     margin-top: 70px; }
   .header__scroller {
@@ -497,13 +497,13 @@ body {
         border: 3px solid #FFFFFF;
         border-radius: 100px;
         padding: 14px 30px; }
-      .header .navigation__link--button:hover {
-        background: #FFFFFF;
-        color: #212121;
-        font-weight: bold; }
-    .header .navigation__link:hover:not(.navigation__link--button) {
-      font-weight: bold;
-      color: #c59100; }
+        .header .navigation__link--button:hover {
+          background: #FFFFFF;
+          color: #212121;
+          font-weight: bold; }
+      .header .navigation__link:hover:not(.navigation__link--button) {
+        font-weight: bold;
+        color: #c59100; }
     .header .navigation__hamburger {
       font-family: "Inconsolata", monospace;
       font-size: 21px;
@@ -631,14 +631,14 @@ body {
       font-family: "Inconsolata", monospace;
       font-weight: bold;
       font-size: 21px; }
+      .main .cta__button:hover {
+        border: 3px solid #c59100;
+        background: #c59100;
+        color: #212121; }
       @media (max-width: 744px) {
         .main .cta__button {
           font-size: 18px;
           padding: 29px 50px; } }
-    .main .cta__button:hover {
-      border: 3px solid #c59100;
-      background: #c59100;
-      color: #212121; }
   .main .about {
     margin: 0 64px 120px 64px; }
     .main .about__heading {
@@ -792,15 +792,15 @@ body {
       font-weight: bold;
       font-size: 21px;
       cursor: pointer; }
+      .main .contact__submit:hover {
+        border: 3px solid #c59100;
+        background: #c59100;
+        color: #212121; }
       @media (max-width: 1004px) {
         .main .contact__submit {
           padding: 26px 50px;
           font-size: 18px;
           position: relative; } }
-    .main .contact__submit:hover {
-      border: 3px solid #c59100;
-      background: #c59100;
-      color: #212121; }
 
 .footer {
   margin: 60px 140px;
@@ -923,13 +923,13 @@ body {
         border: 3px solid #FFFFFF;
         border-radius: 100px;
         padding: 14px 30px; }
-      .headerSub .navigation__link--button:hover {
-        background: #FFFFFF;
-        color: #212121;
-        font-weight: bold; }
-    .headerSub .navigation__link:hover:not(.navigation__link--button) {
-      font-weight: bold;
-      color: #c59100; }
+        .headerSub .navigation__link--button:hover {
+          background: #FFFFFF;
+          color: #212121;
+          font-weight: bold; }
+      .headerSub .navigation__link:hover:not(.navigation__link--button) {
+        font-weight: bold;
+        color: #c59100; }
     .headerSub .navigation__hamburger {
       font-family: "Inconsolata", monospace;
       font-size: 21px;
@@ -1018,23 +1018,23 @@ body {
         background: #FFFFFF;
         color: #212121;
         opacity: .5; }
+        .subpage .article__button--first:hover {
+          opacity: 1; }
         @media (max-width: 744px) {
           .subpage .article__button--first {
             margin-bottom: 30px; } }
-      .subpage .article__button--first:hover {
-        opacity: 1; }
       .subpage .article__button--last {
         padding: 29px 34px;
         margin-left: 60px;
         color: #FFFFFF;
         background: #212121; }
+        .subpage .article__button--last:hover {
+          background: #c59100;
+          border-color: #c59100;
+          color: #212121; }
         @media (max-width: 744px) {
           .subpage .article__button--last {
             margin-left: 0; } }
-      .subpage .article__button--last:hover {
-        background: #c59100;
-        border-color: #c59100;
-        color: #212121; }
       @media (max-width: 744px) {
         .subpage .article__button {
           display: block;
