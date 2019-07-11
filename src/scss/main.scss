@@ -79,13 +79,13 @@ body {
     border-radius: 100px;
     padding: 29px 61px;
 
+    &:hover {
+      background: rgb(197, 145, 0);
+    }
+
     @media (max-width: $tablet) {
       font-size: 16px;
     }
-  }
-
-  &__button:hover {
-    background: rgb(197, 145, 0);
   }
 
   &__cta {
@@ -232,18 +232,18 @@ body {
         border: 3px solid #FFFFFF;
         border-radius: 100px;
         padding: 14px 30px;
+
+        &:hover {
+          background: #FFFFFF;
+          color: #212121;
+          font-weight: bold;
+        }
       }
 
-      &--button:hover {
-        background: #FFFFFF;
-        color: #212121;
+      &:hover:not(.navigation__link--button) {
         font-weight: bold;
+        color: rgb(197, 145, 0);
       }
-    }
-
-    &__link:hover:not(.navigation__link--button) {
-      font-weight: bold;
-      color: rgb(197, 145, 0);
     }
 
     &__hamburger {
@@ -402,16 +402,16 @@ body {
       font-weight: bold;
       font-size: 21px;
 
+      &:hover {
+        border: 3px solid rgb(197, 145, 0);
+        background: rgb(197, 145, 0);
+        color: #212121;
+      }
+
       @media (max-width: $mobile) {
         font-size: 18px;
         padding: 29px 50px;
       }
-    }
-
-    &__button:hover {
-      border: 3px solid rgb(197, 145, 0);
-      background: rgb(197, 145, 0);
-      color: #212121;
     }
   }
 
@@ -582,17 +582,17 @@ body {
       font-size: 21px;
       cursor: pointer;
 
+      &:hover {
+        border: 3px solid rgb(197, 145, 0);
+        background: rgb(197, 145, 0);
+        color: #212121;
+      }
+
       @media (max-width: $tablet) {
         padding: 26px 50px;
         font-size: 18px;
         position: relative;
       }
-    }
-
-    &__submit:hover {
-      border: 3px solid rgb(197, 145, 0);
-      background: rgb(197, 145, 0);
-      color: #212121;
     }
   }
 }
@@ -737,18 +737,18 @@ body {
         border: 3px solid #FFFFFF;
         border-radius: 100px;
         padding: 14px 30px;
+
+        &:hover {
+          background: #FFFFFF;
+          color: #212121;
+          font-weight: bold;
+        }
       }
 
-      &--button:hover {
-        background: #FFFFFF;
-        color: #212121;
+      &:hover:not(.navigation__link--button) {
         font-weight: bold;
+        color: rgb(197, 145, 0);
       }
-    }
-
-    &__link:hover:not(.navigation__link--button) {
-      font-weight: bold;
-      color: rgb(197, 145, 0);
     }
 
     &__hamburger {
@@ -831,7 +831,7 @@ body {
       font-size: 21px;
       line-height: 30px;
 
-      &--first{
+      &--first {
         font-weight: bold;
       }
 
@@ -869,14 +869,14 @@ body {
         background: #FFFFFF;
         color: #212121;
         opacity: .5;
+
+        &:hover {
+          opacity: 1;
+        }
         
         @media (max-width: $mobile) {
           margin-bottom: 30px;
         }
-      }
-
-      &--first:hover {
-        opacity: 1;
       }
 
       &--last {
@@ -885,15 +885,15 @@ body {
         color: #FFFFFF;
         background: #212121;
 
+        &:hover {
+          background: rgb(197, 145, 0);
+          border-color: rgb(197, 145, 0);
+          color: #212121;
+        }
+
         @media (max-width: $mobile) {
           margin-left: 0;
         }
-      }
-
-      &--last:hover {
-        background: rgb(197, 145, 0);
-        border-color: rgb(197, 145, 0);
-        color: #212121;
       }
 
       @media (max-width: $mobile) {
